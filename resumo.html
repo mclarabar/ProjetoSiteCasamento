@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martha e Odilon 💍</title>
+
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="css/styleFundo.css" />
+  <link rel="stylesheet" href="css/styleConfirma.css" />
+  <link rel="stylesheet" href="css/stylePresente.css" />
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "eAZGTiwy6gWHSmOZ1",
+      });
+    })();
+  </script>
+</head>
+
+<body class="corpo_site" id="resumo">
+  <!-- ===== MENU SUPERIOR ===== -->
+
+  <header class="header">
+    <button class="hamburger" id="hamburger-button" aria-label="Abrir menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <nav class="menu" id="main-menu">
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <!-- Resumo da Compra -->
+  <section id="resumoSection" class="hidden">
+    <div class="resumo-container">
+      <h2>Resumo da sua compra</h2>
+      <div class="resumo-grid">
+        <div class="resumo-box">
+          <div class="linha">
+            <span>Valor Total dos Presentes</span><span id="subtotalDisplay">R$ 0,00</span>
+          </div>
+          <div class="linha desconto">
+            <span>Desconto Progressivo</span><span id="descontoDisplay">- R$ 0,00</span>
+          </div>
+          <div class="linha total">
+            <span>Total</span><span id="totalFinalDisplay">R$ 0,00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="botoes-resumo">
+        <a href="carrinho.html" id="voltarCarrinho" class="btn-gray">Voltar para o carrinho</a>
+        <a href="telapagamento.html" id="irParaPagamento" class="btn-pink">Concluir compra</a>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="scripts/scriptMenu.js"></script>
+  <script src="scripts/scriptPresente.js"></script>
+
+  <script src="scripts/scriptMusica.js"></script>
+  <script src="scripts/scriptConfirma.js"></script>
+  <script src="scripts/scriptContagem.js"></script>
+</body>
+
+</html>

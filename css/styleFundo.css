@@ -248,6 +248,17 @@ button:hover {
     transform: scale(1.1);
 }
 
+.cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a794d6;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
 /*tablets*/
 @media (min-width: 768px) {
     .menu {
@@ -654,6 +665,16 @@ button:hover {
 
 .menu-open .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão se desejar */
+}
+
+a:hover {
+    color: #f0f0f0; /* Um branco levemente diferente para feedback visual */
+    /*text-decoration: underline; /* Adiciona sublinhado no hover */
 }
 
 /* Mobile behaviour */
